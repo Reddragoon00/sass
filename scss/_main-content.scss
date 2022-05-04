@@ -1,0 +1,79 @@
+.main-content{
+    grid-area: main;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    border: solid $color1;
+    border-radius: 20px;
+    border-width: 5px;
+    background-color: $color2;
+
+    @include Small {
+        flex-direction: column;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    h2{
+        margin: 5px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: $white;
+
+        @include Small {
+            font-size: 1.5rem;
+        }
+
+        @include Medium {
+            font-size: 2rem;
+        }
+
+        @include Large{
+            font-size: 2.5rem;
+        }
+    }
+
+    h3{
+        margin: 5px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-color: $white;
+        text-align: center;
+
+        @include Small {
+            font-size: 1.5rem;
+        }
+
+        @include Medium {
+            font-size: 2rem;
+        }
+
+        @include Large{
+            font-size: 2.5rem;
+        }
+    }
+
+    p{
+        font-size: 0.8rem;
+
+        @include Small {
+            font-size: 1rem;
+        }
+
+        @include Medium {
+            font-size: 1.1rem;
+        }
+
+        @include Large{
+            font-size: 1.4rem;
+        }
+    }
+}
