@@ -56,9 +56,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     position: -webkit-sticky;
     position: sticky;
   }
@@ -154,20 +151,50 @@ body {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 576px) {
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .banner h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .banner h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
 .card {
   margin-block: 50px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card-img-bottom {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card-text p {
+  text-align: center;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-content {
@@ -192,12 +219,8 @@ body {
 }
 
 .main-content img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
+  height: auto;
+  max-width: 70%;
 }
 
 .main-content h2 {
@@ -273,4 +296,120 @@ body {
   .main-content p {
     font-size: 1.4rem;
   }
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  padding: 5px;
+  margin: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .card-title {
+    padding: 10px;
+    margin: 6px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+}
+
+.card-text {
+  padding: 5px;
+  margin: 10px 5px 15px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media screen and (min-width: 576px) {
+  .card-text {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-text {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-text {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+}
+
+.main-form, .main-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form fieldset {
+  padding: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-form fieldset legend {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+  .main-form fieldset legend {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-form fieldset legend {
+    font-size: 1.9rem;
+  }
+}
+
+.main-form label {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.main-form input, .main-form button {
+  padding: 5px;
+}
+
+.main-form button {
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #1D2F6F;
+  color: #FFF;
 }
