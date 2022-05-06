@@ -1,0 +1,43 @@
+.main-form{
+    display: flex;
+    align-items: center;
+
+    & fieldset{
+        @extend .main-form;
+        padding: 5px;
+        margin-top: 5px;
+        font-weight: bold;
+        flex-wrap: wrap;
+
+        & legend{
+            font-weight: bold;
+            
+            @include Small{
+                font-size: 1.5rem;
+            }
+
+            @include Medium{
+                font-size: 1.9rem;
+            }            
+        }
+    }    
+    
+    & label{
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    & input{
+        padding: 5px;
+    }
+
+    & button{
+        @extend input;
+        margin: map-get($buttons , margen );
+        border-radius: map-get($buttons , radio );
+        background-color: map-get($buttons , fondo );
+        color: map-get($buttons, texto );
+    }
+
+}
+

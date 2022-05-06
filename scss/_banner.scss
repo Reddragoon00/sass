@@ -18,12 +18,16 @@
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
 
+        @include Small{
+            font-size: 2.2rem;
+        }
+
         @include Medium{
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
 
         @include Large{
-            font-size: 3rem;
+            font-size: 5rem;
         }
     }
     
