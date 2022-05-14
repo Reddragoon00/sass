@@ -27,42 +27,42 @@
                 Tu próxima figura está esperándote
         </h2>
             <div class="main-form">
-                <form action="contacts.html" method="get" class="formulario">
-                <fieldset>
-                    <legend>Tus Datos</legend>
-                    <label for="name">Nombre y Apellido</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y Apellido">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Celular">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu email">
-                    <label for="message">Comentario</label>
-                    <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Dejanos tu comentario"></textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Figura solicitada</legend>
-                    <label for="Figura" class="form-label">Anime</label>
-                    <input class="form-control" list="opcionesAnime" id="Figura" placeholder="Escribí el anime">
-                    <datalist id="opcionesAnime">
-                    <option value="Dragon Ball Z">
-                    <option value="Naruto">
-                    <option value="Bleach">
-                    <option value="One Piece">
-                    <option value="Gintama">
-                    <option value="Toriko">
-                    <option value="HunterxHunter">
-                    <option value="Saint Seiya">
-                    <option value="Boku no Hero">
-                    <option value="Doraemon">
-                    </datalist>
-                    <label for="Fig">Especificá tu figura requerida. Puedes adjuntar una imagen</label>
-                    <textarea name="Fig" class="form-control" id="Fig" cols="30" rows="2"></textarea>
-                    <div class="">
-                        <label for="filename" class="form-label"></label>
-                        <input class="form-control" type="file" id="filename" multiple>
-                    </div>
-                    <button type="button" class="btn">Enviar</button>
-                </fieldset>
+                <form name="formulario" action="https://formsubmit.co/elcobardeyuanti@gmail.com" method="POST" class="formulario" netlify>
+                    <fieldset>
+                        <legend>Tus Datos</legend>
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y Apellido" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Celular" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Tu email" required>
+                        <label for="message">Comentario</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Dejanos tu comentario"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Figura solicitada</legend>
+                        <label for="Figura" class="form-label">Anime</label>
+                        <input class="form-control" list="opcionesAnime" id="Figura" placeholder="Escribí el anime">
+                        <datalist id="opcionesAnime">
+                        <option value="Dragon Ball Z">
+                        <option value="Naruto">
+                        <option value="Bleach">
+                        <option value="One Piece">
+                        <option value="Gintama">
+                        <option value="Toriko">
+                        <option value="HunterxHunter">
+                        <option value="Saint Seiya">
+                        <option value="Boku no Hero">
+                        <option value="Doraemon">
+                        </datalist>
+                        <label for="Fig">Especificá tu figura requerida. Puedes adjuntar una imagen</label>
+                        <textarea name="Fig" class="form-control" id="Fig" cols="30" rows="2"></textarea>
+                        <div class="">
+                            <label for="filename" class="form-label"></label>
+                            <input class="form-control" type="file" id="filename" multiple>
+                        </div>
+                        <button type="submit" class="btn">Enviar</button>
+                    </fieldset>
                 </form>
             </div>
         </main>

@@ -18,19 +18,20 @@
     @include Medium{
         flex-direction: row;
         position: sticky;
+        justify-content: space-evenly;
     }
 
     li{
         display: inline-block;
         padding: 10px;
-        font-size: 20px;
+        font-size: 1.2rem;
         margin: 20px;
 
         @include Small{
-            padding: 2px;
-            margin: 5px;
+            padding: 10px;
+            margin: 15px;
         }
-
+        
         a{
             text-decoration: none;
             color: $color5;
@@ -40,17 +41,26 @@
         list-style: none;
         font-size: 0;
         li{
-            display: block;
+            display: none;
             position: relative;
+            text-align: center;
+            align-self: center;
             &:hover ul{
                 display: block;
             }
+            @include Large{
+                display: block;
+            }
+            
         }
         ul{
             position: absolute;
             display: none;
             li{
-                margin-left: 160px;
+                margin-left: 0px;
+                background-color: $color3;
+                border: 5px solid $color5;
+                border-radius: 10px;
                 padding: 2px;
             }
         }
